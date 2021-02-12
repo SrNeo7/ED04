@@ -1,15 +1,26 @@
 package cuentas;
+/**
+ * Clase principal que contiene el metodo main del proyecto
+ * @author Jose Antonio Cabeza Sanchez
+ * @version 2.0
+ */
 public class Main {
-
+/**
+ * metodo main 
+ * @param args
+ */
     public static void main(String[] args) {
         operativa_cuenta(0);
     }
-
+/**
+ * metodo que opera con la cuenta del usuario mediante un objeto tipo CCuenta
+ * @param cantidad
+ */
 	private static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
         double saldoActual;
 
-        cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        cuenta1 = new CCuenta("Antonio Lopez","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
